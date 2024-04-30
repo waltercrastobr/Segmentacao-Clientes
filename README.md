@@ -1,37 +1,32 @@
 # Segmentação de Clientes
 
+![Descrição da imagem](https://github.com/waltercrastobr/Segmentacao-Clientes/blob/main/img_segmentacao.png)
 
-<img src="" alt="Descrição da imagem">
-
-
-Este repositório contém uma análise de dados completa para prever a probabilidade de um funcionário deixar uma empresa, com foco em estratégias de retenção de funcionários. O projeto utiliza uma [base](https://github.com/waltercrastobr/Analise-Churn/blob/main/Human_Resources.csv) de dados fictícia da IBM (International Business Machine Corporation), disponível no [Kaggle](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
-, e segue uma abordagem de aprendizado supervisionado para classificação. 
+Este repositório contém uma análise de dados completa para a segmentação de clientes de um banco. O projeto utiliza uma [base](https://github.com/waltercrastobr/Segmentacao-Clientes/blob/main/Marketing_data.csv) de dados , disponível no [Kaggle](https://www.kaggle.com/arjunbhasin2013/ccdata), e segue uma abordagem de aprendizado supervisionado para classificação.
 
 ## Introdução
 
 ### Contexto do Projeto
 
+Neste projeto, conduzi uma análise exploratória de dados (EDA) com o objetivo de extrair insights valiosos sobre o comportamento dos clientes de um banco em relação ao uso de cartão de crédito. Em seguida, desenvolvi um modelo preditivo utilizando o algoritmo K-means e PCA, com foco na segmentação dos clientes em grupos distintos. Essa segmentação permitirá ao banco otimizar seus ganhos financeiros por meio de campanhas de marketing personalizadas para cada grupo. Cada etapa do processo foi abordada detalhadamente, com a explicação das razões por trás de cada decisão tomada, visando garantir uma análise sólida e resultados significativos.
 
 ### Problema de Negócio
 
-
+O banco deseja segmentar seus clientes em grupos distintos com base em seus padrões de uso de cartão de crédito. Isso permitirá ao banco direcionar campanhas de marketing mais eficazes e personalizadas para cada grupo, potencializando assim seus ganhos financeiros.
 
 ### Objetivos do Projeto
 
-1. 
-2. 
-3. 
+1. Realizar uma análise exploratória de dados para descobrir insights sobre os padrões dos clientes de um banco com base em seu comportamento de uso de cartão de crédito.
+2. Segmentar os clientes em grupos distintos para potencializar os ganhos financeiros do banco por meio de campanhas personalizadas.
+3. Abordar detalhadamente cada etapa do processo, explicando as razões por trás de cada decisão tomada.
 
 ### Benefícios Esperados
 
--
--
--
--
-
-
+- Aumento dos ganhos financeiros do banco por meio de campanhas de marketing mais eficazes e direcionadas.
+- Melhoria da experiência do cliente e da fidelização, devido às campanhas personalizadas.
 
 ## Bibliotecas Usadas
+
 Abaixo estão as principais bibliotecas utilizadas neste projeto:
 
 - pandas: Para manipulação de dados tabulares.
@@ -39,15 +34,16 @@ Abaixo estão as principais bibliotecas utilizadas neste projeto:
 - seaborn: Para visualização de dados estatísticos.
 - matplotlib: Para criação de gráficos e visualizações.
 - scikit-learn: Para construção e avaliação de modelos de machine learning.
+- StandardScaler: Para padronização dos dados.
+- PCA: Para redução de dimensionalidade.
 
-  
 Além disso, foram utilizados os seguintes modelos de machine learning:
 
 - K-means
 - RandomForestClassifier
 
-
 ## Dicionários de Atributos
+
 #### **Atributos Categóricos (object):**
 - CUST_ID: Identificação do titular do cartão de crédito
 
@@ -74,44 +70,33 @@ Além disso, foram utilizados os seguintes modelos de machine learning:
 - PURCHASES_TRX: Número de transações de compras
 - TENURE: Tempo de serviço do cartão de crédito para o usuário
 
-# Notebooks
+## Notebooks
 
-## [Análise Exploratória de Dados](https://github.com/waltercrastobr/Segmentacao-Clientes/blob/main/EDA_Segmentacao_Clientes.ipynb)
+### [Análise Exploratória de Dados](https://github.com/waltercrastobr/Segmentacao-Clientes/blob/main/EDA_Segmentacao_Clientes.ipynb)
+
 - **Objetivo:** 
-  1. 
-  2. 
-  3. 
+  1. Realizar uma análise exploratória de dados para descobrir insights sobre os padrões dos clientes de um banco com base em seu comportamento de uso de cartão de crédito.
+  2. Identificar padrões e tendências nos dados que possam ser úteis na segmentação dos clientes.
+  3. Visualizar graficamente os principais insights obtidos na análise exploratória.
      
 - **Resultados:**
+  - Espera-se obter um entendimento maior dos dados e uma prévia segmentação dos clientes, permitindo ao banco direcionar campanhas de marketing mais eficazes e personalizadas. Isso pode resultar em um aumento significativo nos ganhos financeiros, além de melhorar a experiência do cliente e a fidelização.
 
-
-## [Clusterização](https://github.com/waltercrastobr/Segmentacao-Clientes/blob/main/Clusterizacao_Segmentacao.ipynb)
+### [Clusterização](https://github.com/waltercrastobr/Segmentacao-Clientes/blob/main/Clusterizacao_Segmentacao.ipynb)
 
 - **Objetivo:** 
-- **Passos:**
-  1. 
-  2. 
-  3. 
- 
+  1. Realizar uma redução de dimensionalidade utilizando PCA.
+  2. Segmentar os dados em quatro clusters distintos.
+  3. Interpretar os resultados da clusterização e identificar características comuns em cada grupo.
+  4. Salvar a base clusterizada para a equipe de Marketing.
+  5. Gerar um relatório de recomendações com base na análise feita.
+
 - **Resultados:**
-Foram inicialmente testados os modelos regressão logística e no random forest devido à sua capacidade com dados desbalanceados. Após avaliar seus desempenhos, outros modelos foram considerados para melhorar as métricas de recall e F1-score, cruciais na análise de churn. Além da regressão logística e do XGB, foram testados o AdaBoostClassifier, SVC, KNeighborsClassifier e GaussianNB. Os melhores resultados foram obtidos com a regressão logística e o XGB, levando a uma otimização desses modelos para maximizar seu desempenho.
+  - Espera-se obter uma segmentação clara dos dados em quatro clusters distintos, o que permitirá uma melhor compreensão dos padrões presentes nos dados e a identificação de possíveis insights e recomendações para tomada de decisões.
 
 
-## [Relatório de Recomendações](https://github.com/waltercrastobr/Analise-Churn/blob/main/relatorio_ganhos.pdf)
-Em conclusão, o uso do modelo resultou em uma economia significativa de custos e tempo para a empresa, em comparação com o cenário sem o modelo. Em cinco meses, a diferença total foi de $2,983,440, considerando os custos de contratação (reposição dos 'churners') e o lucro acumulado. 
+### [Resultados](https://github.com/waltercrastobr/Segmentacao-Clientes/blob/main/cluster_ordenado.csv)
 
+Como resultados, obtivemos a separação dos clientes em 4 grupos distintos, armazenados nessa [base](https://github.com/waltercrastobr/Segmentacao-Clientes/blob/main/cluster_ordenado.csv). E também foi gerado um relatório com os grupos ja divididos e recomendações para a equipe de marketing.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Descrição da imagem](https://github.com/waltercrastobr/Segmentacao-Clientes/blob/main/img_clusterizacao.png)
