@@ -95,7 +95,7 @@ Além disso, foram utilizados os seguintes modelos de machine learning:
   - Espera-se obter uma segmentação clara dos dados em quatro clusters distintos, o que permitirá uma melhor compreensão dos padrões presentes nos dados e a identificação de possíveis insights e recomendações para tomada de decisões.
 
 
-### [Resultados](https://github.com/waltercrastobr/Segmentacao-Clientes/blob/main/cluster_ordenado.csv)
+### Resultados
 
 Como resultados, obtivemos a separação dos clientes em 4 grupos distintos, armazenados nessa [base](https://github.com/waltercrastobr/Segmentacao-Clientes/blob/main/cluster_ordenado.csv). E também foi gerado um relatório com os grupos ja divididos e recomendações para a equipe de marketing.
 
