@@ -2,7 +2,7 @@
 
 ![Descrição da imagem](https://github.com/waltercrastobr/Segmentacao-Clientes/blob/main/img_segmentacao.png)
 
-Este repositório contém uma análise de dados completa para a segmentação de clientes de um banco. O projeto utiliza uma [base](https://github.com/waltercrastobr/Segmentacao-Clientes/blob/main/Marketing_data.csv) de dados, disponível no [Kaggle](https://www.kaggle.com/arjunbhasin2013/ccdata), e segue uma abordagem de aprendizado supervisionado para classificação.
+Este repositório contém uma análise de dados completa para a segmentação de clientes de um banco. O projeto utiliza uma [base](https://github.com/waltercrastobr/Segmentacao-Clientes/blob/main/Marketing_data.csv) de dados, disponível no [Kaggle](https://www.kaggle.com/arjunbhasin2013/ccdata), e segue uma abordagem de aprendizado não supervisionado para a segmentação de clientes.
 
 ## Introdução
 
