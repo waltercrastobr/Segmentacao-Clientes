@@ -97,6 +97,6 @@ Além disso, foram utilizados os seguintes modelos de machine learning:
 
 ### Resultados Finais
 
-Como resultados, obtivemos a separação dos clientes em 4 grupos distintos, armazenados nessa [base](https://github.com/waltercrastobr/Segmentacao-Clientes/blob/main/cluster_ordenado.csv). E também foi gerado um relatório com os grupos ja divididos e recomendações para a equipe de marketing.
+Como resultados, obtivemos a separação dos clientes em 4 grupos distintos, armazenados nessa [base](https://github.com/waltercrastobr/Segmentacao-Clientes/blob/main/cluster_ordenado.csv). E também foi gerado um relatório ao final desse [notebook](https://github.com/waltercrastobr/Segmentacao-Clientes/blob/main/Clusterizacao_Segmentacao.ipynb) com os grupos ja divididos e recomendações para a equipe de marketing.
 
 ![Descrição da imagem](https://github.com/waltercrastobr/Segmentacao-Clientes/blob/main/img_clusterizacao.png)
